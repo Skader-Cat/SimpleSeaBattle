@@ -1,0 +1,35 @@
+.body{
+	margin: 0;
+}
+
+.gameField * {
+    padding: 10px 15px;
+	background-color: rgb(96, 143, 204);
+	border: 1px solid rgb(24, 84, 133);
+	font-size: 22px;
+	font-family: sans-serif;
+	color: #fff;
+}
+
+.gameField{
+    display: grid;
+	grid-template-columns: repeat(11, 60px);
+	grid-template-rows: repeat(11, 60px);
+}
+
+#f1{
+    float: left;
+	width: 48%;
+}
+
+#f2{
+	margin-left: calc(48%);
+}
+
+#f3{
+	float: left;
+	text-align: center;
+	width: 8.5%;
+}
+
+
