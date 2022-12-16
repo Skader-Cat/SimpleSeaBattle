@@ -119,7 +119,7 @@ function setField(gameField, cells){ //функция, которая созда
     }
 
     for(let i = 0; i < (length_x * length_y)-length_x; i++){ //цикл, который создает игровое поле
-        cells[i].innerHTML = cells[i].symb; 
+        cells[i].innerHTML = "🌊" ;     
         //cells[i].innerHTML = i;
         if(i % length_x == 0){
             cells[i].innerHTML = alphabet[i/length_x]; //цикл, который создает левый столбик с буквами
@@ -211,3 +211,7 @@ function main_game(){ //функция, которая запускает игр
     });
 }
 main_game();
+
+let player_wins = JSON.parse(localStorage.player_2_wins).win;
+(player_wins)++;
+localStorage.player_2_wins = JSON.stringify({win: player_wins});
